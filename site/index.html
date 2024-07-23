@@ -1,60 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Documentos</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>    
-    <link rel="stylesheet" href=style.css/>
-    <script src="script.js"> </script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 01 - DS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  </head>
 
-<body>
+  <body>
+    <h1 class="title">Cálculos</h1>
+
     <main>
+      <section>
+        <h2>Soma</h2>
+        <input type="number" id="n1" placeholder="Numero 01" />
+        <input type="number" id="n2" placeholder="Numero 02" />
+        <button onclick="somar()">Calcular</button>
+        <p id="respSoma">sua resposta </p>
+      </section>
 
-        <h1 class="title">Calculos</h1>
+      <section>
+        <h2>Subtração</h2>
+        <input type="number" id="a1" placeholder="Numero 01" />
+        <input type="number" id="a2" placeholder="Numero 02" />
+        <button onclick="subtrair()">Calcular</button>
+        <p id="respSubtracao">sua resposta </p>
+      </section>
 
-        <section>
-            <h2> Soma </h2>
-            <label for="username"> numero 1</label><br/>
-            <input type="number" id="n1"/><br/>
-            <label for="username"> numero 2</label><br/>
-            <input type="number" id="n2"/><br/><br/>
-            <button onclick="somar()"> calcular</button> <br/>
-        </section>
+      <section>
+        <h2>Divisão</h2>
+        <input type="number" id="b1" placeholder="Numero 01" />
+        <input type="number" id="b2" placeholder="Numero 02" />
+        <button onclick="divisao()">Calcular</button>
+        <p id="respDivisao">sua resposta </p>
+      </section>
 
-        <section>    
-            <h2> Subtracao</h2>
+      <section>
+        <h2>Multiplicação</h2>
+        <input type="number" id="c1" placeholder="Numero 01" />
+        <input type="number" id="c2" placeholder="Numero 02" />
+        <button onclick="mult()">Calcular</button>
+        <p id="respMult">sua resposta </p>
+      </section>
 
-        </section>
+      <section>
+        <h2>Média</h2>
+        <input type="number" id="d1" placeholder="Numero 01" />
+        <input type="number" id="d2" placeholder="Numero 02" />
+        <input type="number" id="d3" placeholder="Numero 03" />
+        <button onclick="media()">Calcular</button>
+        <p>Média:
+          <span id="respMedia"></span>
+        </p>
+      </section>
 
-        <section>
-            <h2>divisao</h2>
-
-        </section>
-
-        <section>    
-            <h2>multiplicacao</h2>
-
-        </section>
-
-        <section>     
-            <h2>media</h2>
-
-        </section>
-
-        <section>
-            <h2>iteracao (for)</h2>
-
-        </section>
-
+      <section>
+        <h2>Iteração (for)</h2>
+           <input type="number" id="numeroInput" placeholder="Digite um numero">
+           <button onclick="contar()">CONTAR</button>
+           <p id="result"></p>
+      </section>
 
     </main>
-
-
-</body>
-
+  </body>
 </html>
